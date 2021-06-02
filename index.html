@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Pricing component with toggle </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="content">
+    <div class="title">
+      <h1>Our Pricing</h1>
+      <div class="div">
+        <span class="switch">Annually</span>
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span class="switch">Monthly</span>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="card" id='basic'>
+        <p class="titlee">Basic</p>
+
+      <ul>
+        <li>
+        <p class="monthly" id="yearly-m1"><span class="dollar-sign">$</span>19.99</p>
+        <p class="yearly" id="yearly-a1"><span class="dollar-sign">$</span>199.99</p>
+        </li>
+        <hr>
+        <li><p>500 GB Storage</p></li>
+        <hr>
+        <li><p>2 Users Allowed</p></li>
+        <hr>
+        <li><p>Send up to 3 GB</p></li>
+      </ul>
+
+        <hr>
+        <br>
+        <button class="button">LEARN MORE</button>
+      </div>
+
+      <div class="card" id='professional'>
+        <p class="titlee">Professional</p>
+        <ul>
+        <li><p class="monthly" id="yearly-m2"><span class="dollar-sign">$</span>$24.99</p></li>
+        <li><p class="yearly" id="yearly-a2"><span class="dollar-sign">$</span>249.99</p></li>
+        <hr>
+        <li><p>1 TB Storage</p></li>
+        <hr>
+       <li><p>5 Users Allowed</p></li>
+        <hr>
+        <li><p>Send up to 10 GB</p></li>
+      </ul>
+        <hr>
+        <br>
+        <button>LEARN MORE</button>
+      </div>
+
+      <div class="card" id='master'>
+        <p class="titlee">Master</p>
+        <ul>
+        <p class="monthly" id="yearly-m1"><span class="dollar-sign">$</span>39.99</p>
+        <p class="yearly" id="yearly-a1"><span class="dollar-sign">$</span>399.99</p>
+        <hr>
+        <p>2 TB Storage</p>
+        <hr>
+        <p>10 Users Allowed</p>
+        <hr>
+        <p>Send up to 20 GB</p>
+      </ul>
+        <hr>
+        <br>
+        <button class="button">LEARN MORE</button>
+      </div>
+  </div>
+   <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sara Vitoria</a>.
+    </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
