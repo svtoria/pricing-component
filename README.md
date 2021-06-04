@@ -1,6 +1,6 @@
-# Frontend Mentor - FAQ accordion card solution
+# Frontend Mentor - Pricing component with toggle
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC/hub/pricing-component-with-toggle-9LS-Rr21l). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Pricing component with toggle on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC/hub/pricing-component-with-toggle-9LS-Rr21l). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -10,7 +10,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
