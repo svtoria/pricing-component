@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/pricing-component-with-toggle-aq5zdpJXN)
+- Live Site URL: (https://svtoria.github.io/pricing-component/)
 
 ## My process
 
