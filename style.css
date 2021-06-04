@@ -1,38 +1,331 @@
 @font-face {
-    font-family: 'bold';
-    src: url(./fonts/Montserrat-Bold.ttf);
+  font-family: "bold";
+  src: url(./fonts/Montserrat-Bold.ttf);
 }
 @font-face {
-    font-family: 'light';
-    src: url(./fonts/Montserrat-Light.ttf);
+  font-family: "light";
+  src: url(./fonts/Montserrat-Light.ttf);
 }
 @font-face {
-    font-family: 'medium';
-    src: url(./fonts/Montserrat-Medium.ttf);
+  font-family: "medium";
+  src: url(./fonts/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: 'regular';
-    src: url(./fonts/Montserrat-Regular.ttf);
+  font-family: "regular";
+  src: url(./fonts/Montserrat-Regular.ttf);
 }
 
-*{
-    padding: 0%;
-    margin: 0%;
-    outline: 0%;
+* {
+  padding: 0%;
+  margin: 0%;
+  outline: 0%;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.5rem;
-    background-image: url(images/bg-top.svg);
-    background-color: hsl(240, 78%, 98%);
-    background-repeat: no-repeat;
-    background-position-x: 100%, 0;
-    background-position-y: 0, 100%;
+body {
+  font-size: 1.5rem;
+  background-image: url(images/bg-top.svg);
+  background-color: hsl(240, 78%, 98%);
+  background-repeat: no-repeat;
+  background-position-x: 100%, 0;
+  background-position-y: 0, 100%;
 }
+
+.title {
+  text-align: center;
+  padding: 6rem;
+  font-family: "bold";
+  color: hsl(232, 13%, 33%);
+  display: inline-block;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.div {
+  margin-top: 3rem;
+}
+
+.titlee {
+  margin: 1%;
+}
+
+.switch {
+  font-family: "medium";
+  font-size: 13px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position-x: 0, 100%;
+  background-position-y: 100%, 0;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(236, 72%, 79%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(237, 63%, 64%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -1%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 320px;
+  min-height: 425px;
+  height: 100%;
+  padding: 1.2%;
+  box-shadow: 0 0.5rem 1rem hsl(228deg 72% 79% / 50%);
+}
+
+p {
+  font-family: "bold";
+  font-size: 16px;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  opacity: 0.8;
+}
+
+#a {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: hsl(232, 13%, 33%);
+}
+
+#b {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  padding-bottom: 0%;
+  padding-top: 2%;
+  min-height: 460px;
+  height: 100%;
+}
+
+#c {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: hsl(232, 13%, 33%);
+}
+
+.yearly {
+  font-size: 56px;
+  color: hsl(232, 13%, 33%);
+}
+
+#yearly-m2 {
+  font-size: 56px;
+  color: white;
+}
+
+#yearly-a2 {
+  font-size: 56px;
+  color: white;
+}
+
+.dollar-sign {
+  font-size: 24px;
+  font-family: "bold";
+  margin-top: -40px;
+}
+
+button {
+  font-family: "bold";
+  font-size: 13px;
+  padding-top: 2%;
+  padding: 4%;
+  width: 100%;
+  margin-top: 3px;
+  border: 1px solid hsl(236, 72%, 79%);
+  color: hsl(236, 72%, 79%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button {
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  color: white;
+  border: 1px solid white;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.button:hover {
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  background-image: linear-gradient(white, white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "bold";
+  opacity: 0.8;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.monthly {
+  display: none;
+}
+
+@keyframes active {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.active {
+  animation: active 0.4s;
+  display: initial;
+  margin-top: 50%;
+}
+
+li {
+  list-style-type: none;
+}
+
+#professional {
+  font-size: 56px;
+  color: white;
+}
+
+@media (max-width: 1070px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    width: 800px;
+    max-width: 85%;
+    min-height: 300px;
+    height: 100%;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 0.5rem 1rem hsl(228deg 72% 79% / 50%);
+  }
+
+  #b {
+    max-width: 85%;
+    min-height: 300px;
+    padding: 3%;
+  }
+
+  .yearly {
+    margin: 3%;
+  }
+
+  .price {
+    margin: 3%;
+  }
+
+  p {
+    margin: 4%;
+  }
+
+  .button {
+    padding: 2.5%;
+    margin-bottom: 2%;
+  }
+  button {
+    padding: 2.5%;
+    margin-bottom: 2%;
+  }
+}
+
 
 .title{
     text-align: center;
